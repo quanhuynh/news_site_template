@@ -160,43 +160,39 @@ input[type=text]:focus {
 /*--------------------*/
 #navigation_bar {
 	width: 95%;
-	height: 35px;
+	height: 33px;
 	margin: 0px auto;
 	background-color: black;
 	border-radius: 2px;
-	margin-top: 5px;
+	margin-top: 2px;
 }
 .nav_tab {
 	float: left;
-	width: 10%;
+	width: 8%;
 	height: 100%;
-	border-right: thin solid white;
 	line-height: 35px;
-	color: white;
+	color: #B2B2B2;
 	background-color: #060606;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
+	font-size: 1.3em;
 	transition: linear 0.1s;
 }
 .nav_tab:hover {
-	background-color: #858585;
-	color: #191919;
+	color: white;
 }
 #breaking {
-	width: 14%;
+	width: 12%;
 	transition: linear 0.1s;
 }
 #breaking:hover {
-	background-color: #D1D1D1;
-	color: #191919;
+	color: white;
 }
 #entertainment {
-	width: 12.5%;
+	width: 10%;
 }
 #seemore {
 	width: calc(13.5% - 9px);
-	background-color: #161616;
 	color: white;
 	transition: linear 0.1s;
 }
@@ -219,7 +215,7 @@ input[type=text]:focus {
 	width: 858px;
 	height: 600px;
 	margin: 0px auto;
-	margin-top: 5px;
+	margin-top: 2px;
 	overflow: hidden;
 }
 #featured_picture {
