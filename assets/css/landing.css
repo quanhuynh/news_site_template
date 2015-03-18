@@ -205,18 +205,20 @@ input[type=text]:focus {
 /*----------------------*/
 /*-- FEATURED ARTICLE --*/
 /*----------------------*/
+
 #featured_background {
 	width: 95%;
 	height: 600px;
+	background-image: url("http://www.transparenttextures.com/patterns/dark-matter.png");
 	background-color: black;
 	margin: 0px auto;
+	margin-top: 2px;
 }
 #featured_article {
+	position: relative;
 	width: 858px;
 	height: 600px;
 	margin: 0px auto;
-	margin-top: 2px;
-	overflow: hidden;
 }
 #featured_picture {
 	height: 600px;
@@ -228,10 +230,11 @@ input[type=text]:focus {
 }
 #article_text {
 	padding-left: 10px;
-	width: 858px;
+	height: 150px;
+	width: 848px;
 	position: absolute;
-	z-index: 10;
-	top: 80%;
+	overflow: hidden;
+	bottom: 0;
 	background-color: black;
 	opacity: 0.7;
 	transition: linear 0.1s;
@@ -239,6 +242,7 @@ input[type=text]:focus {
 #article_text:hover {
 	opacity: 0.9;
 	transform: scale(1.01);
+	overflow: hidden;
 }
 #article_title {
 	color: white;
@@ -259,4 +263,17 @@ input[type=text]:focus {
 	color: white;
 	font-family: 'Hind', sans-serif;
 	font-size: 2em;
+}
+
+
+/*-------------*/
+/*-- CONTENT --*/
+/*-------------*/
+
+#content {
+	height: 700px;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: black;
 }
