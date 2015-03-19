@@ -26,12 +26,11 @@ body {
 	width: 95%;
 	height: 126px;
 	margin: 0px auto;
-	background-color: #060606;
 }
 #title {
 	float: left;
 	width: 20%;
-	background-color: #060606;
+	background-color: black;
 	border-right: thin solid white;
 	background-image: url('http://www.transparenttextures.com/patterns/dark-matter.png');
 }
@@ -50,36 +49,66 @@ body {
 	padding-left: 10px;
 }
 
-/*-- RIGHT SIDE OF TITLE BAR --*/
 #main_title {
 	float: left;
 	width: calc(80% - 1px);
 	height: 126px;
-	background-color: #060606;
+	background-color: black;
 	background-image: url('http://www.transparenttextures.com/patterns/dark-matter.png');
 }
 #top_set {
-	padding-top: 20px;
-	height: calc(50% - 20px);
+	height: calc(50%);
 }
-#big_news_bar {
+
+/*-- NAVIGATION BAR --*/
+#navigation_bar {
 	float: left;
+	width: 70%;
+	height: 33px;
+	background-color: transparent;
+	border-radius: 2px;
 }
-.big_news_link {
+.nav_tab {
 	float: left;
-	color: #D3D3D3;
-	font-size: 2em;
-	font-family: 'Roboto',sans-serif;
-	padding: 0px 7px 0px 7px;
-	border-right: thin solid #999999;
+	width: 10%;
+	height: 100%;
+	line-height: 35px;
+	color: #B2B2B2;
+	background-color: transparent;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
 	transition: linear 0.1s;
 }
-.big_news_link:hover {
+.nav_tab:hover {
+	color: white;
+	border-bottom: medium solid 
+}
+#breaking {
+	width: 12%;
+	transition: linear 0.1s;
+}
+#breaking:hover {
 	color: white;
 }
+#entertainment {
+	width: 14%;
+}
+#seemore {
+	width: calc(13.5% - 9px);
+	color: white;
+	transition: linear 0.1s;
+}
+#seemore:hover {
+	background-color: #131313;
+	color: white;
+}
+
 #login_bar {
-	float: left;
-	padding-right: 15px;
+	float: right;
+	width: 25%;
+	height: 50%;
+	padding: 20px 20px 0 0;
 }
 .account_button {
 	float: left;
@@ -98,24 +127,23 @@ body {
 #edition {
 	float: left;
 	padding-top: 35px;
+	padding-left: 10px;
 	height: 18px;
+	color: #CCCCCC;
+	opacity: 0.7;
 }
 #edition_text {
 	float: left;
-	color: #CCCCCC;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding: 0px 5px 0px 5px;
 }
-#edition_button {
-	width: 70px;
+.edition_choice {
+	float: left;
+	line-height: 18px;
+	padding: 0 5px 0 5px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2em;
-	outline: none;
-	background-color: #CCCCCC;
-}
-#edition_button:focus {
-	box-shadow: 0px 0px 25px -2px #474747;
+	font-size: 1.1em;
 }
 #bottom_set .float_right {
 	position: relative;
@@ -155,70 +183,23 @@ input[type=text]:focus {
 }
 
 
-/*--------------------*/
-/*-- NAVIGATION BAR --*/
-/*--------------------*/
-#navigation_bar {
-	width: 95%;
-	height: 33px;
-	margin: 0px auto;
-	background-color: black;
-	border-radius: 2px;
-	margin-top: 2px;
-}
-.nav_tab {
-	float: left;
-	width: 8%;
-	height: 100%;
-	line-height: 35px;
-	color: #B2B2B2;
-	background-color: #060606;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.3em;
-	transition: linear 0.1s;
-}
-.nav_tab:hover {
-	color: white;
-}
-#breaking {
-	width: 12%;
-	transition: linear 0.1s;
-}
-#breaking:hover {
-	color: white;
-}
-#entertainment {
-	width: 10%;
-}
-#seemore {
-	width: calc(13.5% - 9px);
-	color: white;
-	transition: linear 0.1s;
-}
-#seemore:hover {
-	background-color: #6E0000;
-	color: white;
-}
-
-
 /*----------------------*/
 /*-- FEATURED ARTICLE --*/
 /*----------------------*/
 
-#featured_background {
+#landing_content {
 	width: 95%;
 	height: 600px;
 	background-image: url("http://www.transparenttextures.com/patterns/dark-matter.png");
-	background-color: black;
+	background-color: white;
 	margin: 0px auto;
 	margin-top: 2px;
 }
 #featured_article {
+	float: left;
 	position: relative;
-	width: 858px;
+	width: 65%;
 	height: 600px;
-	margin: 0px auto;
 }
 #featured_picture {
 	height: 600px;
@@ -241,7 +222,7 @@ input[type=text]:focus {
 }
 #article_text:hover {
 	opacity: 0.9;
-	transform: scale(1.01);
+	transform: scale(1.005);
 	overflow: hidden;
 }
 #article_title {
@@ -264,16 +245,121 @@ input[type=text]:focus {
 	font-family: 'Hind', sans-serif;
 	font-size: 2em;
 }
-
+#today_info {
+	position: relative;
+	float: left;
+	background-color: white;
+	width: 35%;
+	height: 100%;
+}
+#date {
+	width: 100%;
+	height: 5%;
+	padding: 10px 15px 15px 20px;
+	font-family: 'Rajdhani', sans-serif; 
+	font-size: 2.5em;
+	font-weight: 700;
+}
+#date_title {
+	width: 60%;
+	border-bottom: thin solid black;
+	transition: linear 0.1s;
+}
+#location {
+	padding-left: 30px;
+	width: 50%;
+	height: 5%;
+}
+#location img {
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+#place {
+	float: left;
+	font-family: 'Hind', sans-serif;
+	font-size: 1.5em;
+}
+#change_location {
+	float: right;
+	font-size: 1.3em;
+	font-family: 'Hind', sans-serif;
+	font-weight: 500;
+	color: #B20000;
+	transition: linear 0.1s;
+}
+#change_location:hover {
+	color: #6B0000;
+}
+#weather {
+	height: 30%;
+	width: 100%;
+	padding-left: 5%;
+	opacity: 0.8;
+	transition: linear 0.1s;
+}
+#weather:hover {
+	opacity: 1;
+}
+#weather img {
+	float: left;
+	width: 30%;
+}
+#forecast {
+	float: right;
+	width: 60%;
+	font-family: 'Martel Sans', sans-serif;
+}
+#forecast_title {
+	font-size: 3em;
+}
+#temperature {
+	font-size: 1.5em;
+}
+#more_forecast {
+	padding-top: 10px;
+	font-size: 1em;
+}
 
 /*-------------*/
 /*-- CONTENT --*/
 /*-------------*/
 
 #content {
-	height: 700px;
+	height: 1000px;
 	width: 95%;
 	margin: 0 auto;
 	margin-top: 20px;
-	background-color: black;
+	background-color: white;
+	border: thin solid black;
+	border-radius: 2%;
+}
+.article_box {
+	float: left;
+	width: 20%;
+	height: 300px;
+	background-color: white;
+	border: thin solid gray;
+	border-radius: 4%;
+	margin: 40px 0 20px 4%;
+	transition: linear 0.1s;
+}
+.article_box:hover {
+	box-shadow: 0px 0px 25px -2px #666666;
+	transform: scale(1.01);
+}
+.article_category {
+	width: 80%;
+	color: #00005C;
+	font-size: 2.5em;
+	font-family: 'Hind', sans-serif;
+	font-style: italic;
+	font-weight: 800;
+	text-shadow: 0.1px 0.1px gray;
+	padding: 5px 0 0 20px;
+	border-bottom: medium solid #00005C;
+}
+#latest {
+	color: #800000;
+	border-bottom: medium solid #800000;
 }
