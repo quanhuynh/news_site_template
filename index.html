@@ -64,19 +64,28 @@
 		</div>
 		<div id="landing_content">
 			<section id="featured_article">
-				<div id="featured_picture">
-					<img src="assets/img/landing-page/featured-image.jpg">
-				</div>
-				<div id="article_text">
-					<div id="article_title"> WHERE IS VLAD? 
-						<img src="assets/img/landing-page/more.png">
+				<a href="sample_article.html">
+					<div id="article_text">
+						<div id="article_title"> Cras rhoncus, magna nec ornare. 
+							<img src="assets/img/landing-page/more.png">
+						</div>
+						<div id="article_sneakpeek"> Ut sit amet massa porttitor, tempor justo non, ullamcorper purus. Mauris et felis erat. Vivamus ultrices...</div>
 					</div>
-					<div id="article_sneakpeek"> The Russian President hasn't been seen in public for two weeks, and the world is starting to wonder why...</div>
-				</div>
+				</a>
 			</section>
 			<div id="today_info">
 				<div id="date"> 
-					<div id="date_title"> Wednesday, 3/18/2015 </div>
+					<div id="date_title">  
+						<script>
+							var d = new Date();
+							var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+							var curr_day = d.getDay(); 
+							var curr_date = d.getDate();
+							var curr_month = d.getMonth() + 1;
+							var curr_year = d.getFullYear();
+							document.write(days[curr_day] + ", " + curr_month + "/" + curr_date + "/" + curr_year);
+						</script>
+					</div>
 				</div>
 				<div id="location">
 					<img src="assets/img/landing-page/gps.png">
