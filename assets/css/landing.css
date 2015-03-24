@@ -511,3 +511,44 @@ input[type=text]:focus {
 #subscribe_button:hover {
 	opacity: 1;
 }
+#social_media {
+	height: 25px;
+	width: 135px;
+	margin: 0px auto;
+}
+.icon {
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.icon img {
+	width: 25px;
+	height: 25px;
+	border-radius: 30%;
+	transition: linear 0.3s;
+	margin: 0 auto;
+	opacity: 0.6;
+}
+.icon img:hover {
+	opacity: 1.0;
+}
+#copyright {
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+	color: #B2B2B2;
+	font-family: 'Calibri', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+#copyright a:link{
+	text-decoration: none;
+	color: #B2B2B2;
+	font-weight: 600;
+}
+#copyright a:visited{
+	text-decoration: none;
+	color: #B2B2B2;
+}
