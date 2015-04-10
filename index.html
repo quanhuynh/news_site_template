@@ -1,324 +1,164 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="description" content="huffington post news opinion breaking news">
-		<title> Sample News Page Title </title>
-		<meta name="Keywords" content="news, breaking news, news blog, business, sports, politics, technology, entertainment, living">
-		<meta name="Description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac.">
-		<meta charset="utf-8">
-		<!--[if lt IE 9]>
-  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="assets/css/landing.css" rel="stylesheet" type="text/css" />
-		<link href='http://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Pacifico|Signika:600|Ubuntu+Condensed|Roboto:500|Oswald|Roboto+Slab|Open+Sans:600|Fresca|Rajdhani|Martel+Sans|Hind' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div id="top_bar">
-			<a href="index.html">
-			<div id="title"> 
-				<div class="title_text">LOREM
-				</div> 
-				<div class="title_text">IPSUM
-				</div>
-				<div class="title_text">POST
-				</div>
-			</div>
-			</a>
-			<div id="main_title">
-				<div id="top_set">
-					<nav id="navigation_bar">
-						<div id="politics" class="nav_tab"> Politics
-						</div>
-						<div id="business" class="nav_tab"> Business
-						</div>
-						<div id="tech" class="nav_tab"> Tech
-						</div>
-						<div id="entertainment" class="nav_tab"> Entertainment
-						</div>
-						<div id="finance" class="nav_tab"> Finance
-						</div>
-						<div id="seemore" class="nav_tab"> All Sections
-						</div>
-					</nav>
-					<div id="login_bar">
-						<div class="float_right">
-							<div id="signin" class="account_button"> Sign In </div>
-							<div id="create" class="account_button"> Create an Account </div>
-						</div>
-					</div>
-				</div>
-				<div id="bottom_set">
-					<div id="edition">
-						<div id="edition_text"> Edition </div>
-						<div id="us" class="edition_choice"> U.S. </div>
-						<div id="france" class="edition_choice"> France </div>
-						<div id="brazil" class="edition_choice"> Brazil </div>
-						<div id="sample_edition" class="edition_choice"> Sample </div>
-					</div>
-					<div id="search_container">
-						<img src="assets/img/landing-page/search.png">
-		        		<input placeholder="Search" type="text" id="search_bar">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="landing_content">
-			<section id="featured_article">
-				<a href="sample_article.html">
-					<div id="article_text">
-						<div id="article_title"> Cras rhoncus, magna nec ornare. 
-							<img src="assets/img/landing-page/more.png">
-						</div>
-						<div id="article_sneakpeek"> Ut sit amet massa porttitor, tempor justo non, ullamcorper purus. Mauris et felis erat. Vivamus ultrices...</div>
-					</div>
-				</a>
-			</section>
-			<div id="today_info">
-				<div id="date"> 
-					<div id="date_title">  
-						<script>
-							var d = new Date();
-							var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-							var curr_day = d.getDay(); 
-							var curr_date = d.getDate();
-							var curr_month = d.getMonth() + 1;
-							var curr_year = d.getFullYear();
-							document.write(days[curr_day] + ", " + curr_month + "/" + curr_date + "/" + curr_year);
-						</script>
-					</div>
-				</div>
-				<div id="location">
-					<img src="assets/img/landing-page/gps.png">
-					<div id="place"> Washington D.C. </div>
-					<div id="change_location"> change </div>
-				</div>
-				<div id="weather">
-					<img src="assets/img/landing-page/weather.png">
-					<div id="forecast">
-						<div id="forecast_title"> Rainy </div>
-						<div id="temperature"> L: 40° H: 58° </div>
-						<div id="more_forecast"> See more forecast</div>
-					</div>
-				</div>
-				<div id="latest_news">
-					<div id="latest_heading"> Latest News
-					</div>
-					<li><div class="latest_article"> Maecenas eu nisl pretium, finibus felis eu, tempor enim.
-					</div></li>
-					<li><div class="latest_article"> Curabitur non enim sit amet purus scelerisque pellentesque id quis enim.
-					</div></li>
-					<li><div class="latest_article"> Duis tincidunt leo ut quam fringilla, dapibus dignissim lorem vehicula.
-					</div></li>
-					<li><div class="latest_article"> Mauris vitae purus sit amet justo sollicitudin maximus quis at justo.
-					</div></li>
-					<li><div class="latest_article"> Nam quis ante porta, blandit tellus et, ultrices ipsum.
-					</div></li>
-					<li><div class="latest_article"> Nulla lobortis diam laoreet mauris tincidunt, a vestibulum ipsum viverra.
-					</div></li>
-				</div>
-			</div>
-		</div>
-		<div id="content">
-			<div class="article_box">
-				<div class="article_category"> Volutpat 
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article1.jpg">
-					</div>
-					<div class="article_heading"> In ut arcu semper, tincidunt dui non, rhoncus quam. In sodales mollis.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Pellentesque molestie lectus odio, a faucibus diam bibendum et. </div></li>
-					<li><div class="more">  Praesent erat tortor, vestibulum vitae enim sit amet, cursus gravida ex. </div></li>
-					<li><div class="more"> Cras eget nisi a dolor tincidunt tempus et sed tellus. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Vitae 
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article2.jpg">
-					</div>
-					<div class="article_heading"> Suspendisse mattis venenatis ex, sed tincidunt risus luctus et.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Phasellus blandit lacus eget vulputate sollicitudin. </div></li>
-					<li><div class="more">  Nam vehicula elit et ex rhoncus fringilla. Ut suscipit diam eu rhoncus egestas. </div></li>
-					<li><div class="more"> Maecenas dui est, sagittis sit amet luctus hendrerit, sagittis sit amet risus. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Ipsum
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article3.jpg">
-					</div>
-					<div class="article_heading"> Etiam gravida magna ac odio dictum Boeing. Duis nec lectus massa.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Cras sagittis a diam ultricies feugiat. Nulla viverra orci sed viverra commodo. </div></li>
-					<li><div class="more">  In velit nisl, facilisis nec laoreet id, sollicitudin sit amet mi. </div></li>
-					<li><div class="more"> Sed facilisis turpis dolor, facilisis mattis arcu rutrum id. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Libero
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article4.jpg">
-					</div>
-					<div class="article_heading"> Suspendisse sodales ultricies sem, vehicula congue eros dictum eu.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Etiam ultricies erat vel ultricies mollis. Etiam feugiat commodo eros vitae. </div></li>
-					<li><div class="more">  Proin sapien eros, feugiat ut egestas nec, porta at neque. Suspendisse potenti. </div></li>
-					<li><div class="more"> Phasellus risus metus, sollicitudin sit amet nunc quis, eleifend luctus diam. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Sit Amet
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article5.jpg">
-					</div>
-					<div class="article_heading"> Integer consequat quis libero eu pulvinar.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Nam condimentum, ligula non porttitor iaculis, ante risus tristique felis. </div></li>
-					<li><div class="more">  Ut metus mi, malesuada sit amet metus sed, posuere luctus purus. </div></li>
-					<li><div class="more"> Nunc ut malesuada mauris, ut volutpat mauris. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Consectetur
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article6.jpg">
-					</div>
-					<div class="article_heading"> Morbi faucibus felis nibh, et mattis sem sagittis sed.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Phasellus ante nibh, ullamcorper id ex vitae, hendrerit interdum odio. </div></li>
-					<li><div class="more">  Erat elit, tincidunt eget commodo at, tempus gravida nisl. </div></li>
-					<li><div class="more"> Donec posuere volutpat dui, id mattis lacus dapibus vitae. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Adipiscing
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article7.jpg">
-					</div>
-					<div class="article_heading"> Vivamus nec neque vitae metus porttitor fermentum quis quis ex.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Pellentesque imperdiet, neque eu congue condimentum, urna nulla. </div></li>
-					<li><div class="more">  Mauris ac rhoncus lacus, ac tincidunt nibh, tempus gravida nisl. </div></li>
-					<li><div class="more"> Cras volutpat sollicitudin mi, efficitur suscipit mauris pellentesque vel. </div></li>
-				</div>
-			</div>
-			<div class="article_box">
-				<div class="article_category"> Praesent
-				</div>
-				<div class="main_article">
-					<div class="article_pic">
-						<img src="assets/img/landing-page/article8.jpg">
-					</div>
-					<div class="article_heading"> Aliquam fermentum, purus a facilisis rutrum, ex ipsum maximus ipsum.
-					</div>
-				</div>
-				<div class="more_articles">
-					<li><div class="more">  Aenean eleifend massa at leo porttitor sagittis. Etiam quis velit. </div></li>
-					<li><div class="more">  Duis quis iaculis dui. Phasellus vitae semper odio, eget volutpat ligula. </div></li>
-					<li><div class="more"> Etiam accumsan ut dolor sit amet dapibus. Donec dictum dapibus enim. </div></li>
-				</div>
-			</div>
-			<div id="more_articles"> >> More News
-			</div>
-		</div>
-		<footer id="footer">
-			<div id="footer_links">
-				<div id="site_map">
-					<div class="footer_list">
-						<div class="footer_heading"> Sections
-						</div>
-						<div class="footer_item"> Politics
-						</div>
-						<div class="footer_item"> Business
-						</div>
-						<div class="footer_item"> Technology
-						</div>
-						<div class="footer_item"> Finance
-						</div>
-						<div class="footer_item"> More Sections
-						</div>
-
-					</div>
-				</div>
-				<div id="site_info">
-					<div class="footer_list">
-						<div class="footer_heading"> Lorem Ipsum
-						</div>
-						<div class="footer_item"> About
-						</div>
-						<div class="footer_item"> Careers
-						</div>
-						<div class="footer_item"> Privacy Policy
-						</div>
-						<div class="footer_item"> FAQ
-						</div>
-						<div class="footer_item"> Archives
-						</div>
-						<div class="footer_item"> Contact Us
-						</div>
-					</div>
-				</div>
-				<div id="subscription">
-					<div id="subscription_heading"> Sign up for our daily news email
-					</div>
-					<div id="subscription_subheading"> Join our mailing list to get exclusive news every day for free.
-					</div>
-					<div id="search_container">
-		        		<input placeholder="Enter e-mail" type="text" id="search_bar">
-					</div>
-					<div id="subscribe_button"> Sign up
-					</div>
-				</div>
-			</div>
-			<div id="social_media">
-				<div id="facebook" class="icon">
-					<a href="http://facebook.com">
-						<img src="assets/img/landing-page/facebook.png">
-					</a>
-				</div>
-				<div id="instagram" class="icon">
-					<a href="http://instagram.com">
-						<img src="assets/img/landing-page/instagram.png">
-					</a>
-				</div>
-				<div id="twitter" class="icon">
-					<a href="http://twitter.com">
-						<img src="assets/img/landing-page/twitter.png">
-					</a>
-				</div>
-			</div>
-			<div id="copyright">
-				Copyright 2015 | Lorem Ipsum Post | Designed by <a href="http://quanhuynh.github.io">Quan Huynh</a>
-			</div>
-		</footer>
-	</body>
+  <head>
+    <title>Lorem Ipsum Post</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet">
+    <meta name="keywords" content="news, breaking news, news blog, business, sports, politics, technology, entertainment, living">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Pacifico|Signika:600|Ubuntu+Condensed|Roboto:500|Oswald|Roboto+Slab|Open+Sans:600|Fresca|Rajdhani|Martel+Sans|Hind" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="topbar row"><a href="" class="col-sm-2 col-xs-12 sitename"> 
+        <p>LOREM </p>
+        <p>IPSUM </p>
+        <p>POST</p></a>
+      <div class="col-sm-10 col-xs-12 topbarright container-fluid">
+        <div class="col-sm-8 text-left">
+          <div id="sections" class="row">
+            <div class="section">Politics</div>
+            <div class="section">Business</div>
+            <div class="section">Tech</div>
+            <div class="section">Entertainment</div>
+            <div class="section">Finance</div>
+          </div>
+          <div id="edition" class="row">
+            <div class="edition">Edition</div><a href="" class="choice">U.S. |</a><a href="" class="choice">Europe |</a><a href="" class="choice">Asia</a>
+          </div>
+        </div>
+        <div class="col-sm-4 text-right">
+          <div id="accountsection">
+            <div id="create">Create an Account</div>
+            <div id="signin">Sign in</div>
+          </div>
+          <div id="searchbar">
+            <input type="text" placeholder="Search"><a href=""><img src="assets/img/search.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container landing-view">
+      <div class="row">
+        <div id="featured-article" class="col-md-8 col-sm-12">
+          <div data-interval="4000" data-ride="carousel" id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="active item"><a href=""><img src="assets/img/featured1.jpg">
+                  <div id="text">
+                    <div id="title">Maecenas laoreet justo lorem viverra.</div>
+                    <div id="caption">Aenean odio lectus, bibendum eget dui eget, pharetra feugiat est.</div>
+                  </div></a></div>
+              <div class="item"><a href=""><img src="assets/img/featured2.jpg">
+                  <div id="text">
+                    <div id="title">Aliquam posuere vulputate sapien vel.</div>
+                    <div id="caption">Mauris ullamcorper tellus quis tortor fermentum, non interdum enim commodo.</div>
+                  </div></a></div>
+              <div class="item"><a href=""><img src="assets/img/featured3.jpg">
+                  <div id="text">
+                    <div id="title">Nulla vitae lacinia arcu, in elementum ligula.</div>
+                    <div id="caption">Quisque nec mauris in elit scelerisque ornare sit amet sed dui.</div>
+                  </div></a></div>
+            </div><a href="#myCarousel" data-slide="prev" class="carousel-control left"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#myCarousel" data-slide="next" class="carousel-control right"><span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+        </div>
+        <div id="weathernstuff" class="col-md-4 col-sm-12">
+          <div class="row">
+            <div id="weather" class="col-md-12 col-xs-5">
+              <div id="date">
+                <script type="text/javascript">
+                  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                  var d = new Date();
+                  var currDay = d.getDay();
+                  var currDate = d.getDate();
+                  var currMonth = d.getMonth();
+                  var currYear = d.getFullYear();
+                  document.write(days[currDay] + ", " + months[currMonth] + " " + currDate + ", " + currYear);
+                </script>
+              </div>
+              <div id="location">
+                <!--widget from AccuWeather--><a href="http://www.accuweather.com/en/us/berkeley-ca/94704/weather-forecast/332044" class="aw-widget-legal"></a>
+                <div data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1428610688930" id="awcc1428610688930" class="aw-widget-current"> </div>
+                <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+              </div>
+            </div>
+            <div id="latest-news" class="col-md-12 col-xs-7">
+              <div id="title">Latest News</div>
+              <div id="articles"><a href="">
+                  <div class="article">Vestibulum quis tellus pretium arcu lobortis placerat nec at ligula.</div></a><a href="">
+                  <div class="article">Quisque id pellentesque odio. Nulla sit amet libero non nisl rutrum rhoncus eu a mauris.</div></a><a href="">
+                  <div class="article">Quisque dictum fringilla mi vel sagittis. Nam sed ligula ac quam porttitor dictum id quis quam.</div></a><a href="">
+                  <div class="article">Nullam urna metus, rhoncus non elit at, luctus pulvinar elit.</div></a><a href="">
+                  <div class="article">Mauris vel condimentum libero, non hendrerit nulla accumsan mollis.</div></a><a href="">
+                  <div class="article">Curabitur sed sapien vulputate, ullamcorper dui sit amet, egestas.</div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container main-content panel panel-default">
+      <div id="front-page-articles" class="panel panel-body">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">2016 Election</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/2016-thumbnail.jpg"></a><a href="" class="title col-xs-6">Fusce pharetra semper metus, ac pulvinar ante finibus eu.
+                <div class="caption">Aenean consequat vestibulum maximus. Vivamus consequat in elit eu tincidunt. Cras eu sem et erat faucibus lobortis.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">Science</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/science-thumbnail.jpg"></a><a href="" class="title col-xs-6">Donec aliquam lectus interdum elit feugiat.
+                <div class="caption">Augue quam, efficitur nec nulla at, porta finibus mauris. Fusce finibus tincidunt risus, nec placerat ipsum.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">LGBT</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/lgbt-thumbnail.jpg"></a><a href="" class="title col-xs-6">Vestibulum sit amet finibus lorem.
+                <div class="caption">Nullam augue purus, tincidunt ut pellentesque sed, ullamcorper vitae nisl. In iaculis, tortor ut fermentum.</div></a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">Police</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/police-thumbnail.jpg"></a><a href="" class="title col-xs-6">Curabitur tortor odio, congue vel lobortis tempus.
+                <div class="caption">Donec iaculis dolor sapien, vitae condimentum sapien faucibus id. Nunc vestibulum justo id dolor laoreet.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">ISIS</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/isis-thumbnail.jpg"></a><a href="" class="title col-xs-6">Ut rhoncus velit vitae enim lobortis, eu posuere felis bibendum.
+                <div class="caption">Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">Russia</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/russia-thumbnail.jpg"></a><a href="" class="title col-xs-6">Maecenas tincidunt placerat mi a mollis.
+                <div class="caption">Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi scelerisque interdum enim.</div></a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">Stock Market</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/stock-thumbnail.jpg"></a><a href="" class="title col-xs-6">Vestibulum vehicula est non eros iaculis.
+                <div class="caption">Duis tincidunt metus velit, non semper tellus dictum et. Fusce et semper tellus.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">Apple</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/apple-thumbnail.jpg"></a><a href="" class="title col-xs-6">Nullam convallis lectus ut nisl consequat.
+                <div class="caption">Phasellus eleifend, erat id commodo dictum, sem ligula consectetur leo, eu dictum nulla nunc non mauris.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">Environment</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/environment-thumbnail.jpg"></a><a href="" class="title col-xs-6">Duis vulputate pulvinar ligula, eget aliquet diam pulvinar at.
+                <div class="caption">In iaculis, tortor ut fermentum eleifend, velit risus dictum quam, sed posuere lorem nunc in nulla.</div></a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">College</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/college-thumbnail.jpg"></a><a href="" class="title col-xs-6">Aliquam id ex ut nunc gravida maximus et eget felis.
+                <div class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis scelerisque enim, convallis.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">NCAA 2015</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/ncaa-thumbnail.jpg"></a><a href="" class="title col-xs-6">Phasellus gravida, erat eget ultricies scelerisque.
+                <div class="caption">Quisque congue erat ante, et ornare lacus interdum convallis. Proin pretium ultricies mi eu semper.</div></a></div>
+          </div>
+          <div class="col-sm-4 col-xs-12 section"><a href="" class="tag">US Masters</a>
+            <div class="article row"><a href="" class="thumbnail col-xs-6"><img src="assets/img/front-page-tags/masters-thumbnail.jpg"></a><a href="" class="title col-xs-6">Mauris est augue, dapibus nec risus nec, placerat fringilla elit.
+                <div class="caption">Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.</div></a></div>
+          </div>
+        </div>
+      </div><a href="" id="more-news" class="text-right col-xs-12">More News</a>
+    </div>
+    <div class="container footer"></div>
+  </body>
 </html>

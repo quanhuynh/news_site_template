@@ -1,0 +1,208 @@
+doctype html
+html
+	head
+		title Lorem Ipsum Post
+		meta(name="description", content="Lorem ipsum dolor sit amet")
+		meta(name="keywords", content="news, breaking news, news blog, business, sports, politics, technology, entertainment, living")
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", type="text/css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Poiret+One|Indie+Flower|Pacifico|Signika:600|Ubuntu+Condensed|Roboto:500|Oswald|Roboto+Slab|Open+Sans:600|Fresca|Rajdhani|Martel+Sans|Hind", type="text/css")
+		link(rel="stylesheet", href="assets/css/main.css", type="text/css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+
+	body
+
+
+		.topbar.row
+			a(href="").col-sm-2.col-xs-12.sitename 
+					p LOREM 
+					p IPSUM 
+					p POST
+			.col-sm-10.col-xs-12.topbarright.container-fluid
+				.col-sm-8.text-left
+					.row#sections
+							.section Politics
+							.section Business
+							.section Tech
+							.section Entertainment
+							.section Finance
+					.row#edition
+							.edition Edition
+							a(href="").choice U.S. |
+							a(href="").choice Europe |
+							a(href="").choice Asia
+				.col-sm-4.text-right
+					#accountsection
+						#create Create an Account
+						#signin Sign in
+					#searchbar
+						input(type="text", placeholder="Search")
+						a(href="")
+							img(src="assets/img/search.png")
+
+		.container.landing-view
+			.row
+				.col-md-8.col-sm-12#featured-article
+					div(data-interval="4000", data-ride="carousel").carousel.slide#myCarousel
+						.carousel-inner
+							
+							.active.item
+								a(href="")
+									img(src="assets/img/featured1.jpg")
+									#text
+										#title Maecenas laoreet justo lorem viverra.
+										#caption Aenean odio lectus, bibendum eget dui eget, pharetra feugiat est.
+							
+							.item
+								a(href="")
+									img(src="assets/img/featured2.jpg")
+									#text
+										#title Aliquam posuere vulputate sapien vel.
+										#caption Mauris ullamcorper tellus quis tortor fermentum, non interdum enim commodo.
+							
+							.item
+								a(href="")
+									img(src="assets/img/featured3.jpg")
+									#text
+										#title Nulla vitae lacinia arcu, in elementum ligula.
+										#caption Quisque nec mauris in elit scelerisque ornare sit amet sed dui.
+						
+						a(href="#myCarousel", data-slide="prev").carousel-control.left
+							span.glyphicon.glyphicon-chevron-left
+						a(href="#myCarousel", data-slide="next").carousel-control.right
+							span.glyphicon.glyphicon-chevron-right
+				.col-md-4.col-sm-12#weathernstuff
+					.row
+						.col-md-12.col-xs-5#weather
+							#date
+								script(type="text/javascript").
+									var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+									var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+									var d = new Date();
+									var currDay = d.getDay();
+									var currDate = d.getDate();
+									var currMonth = d.getMonth();
+									var currYear = d.getFullYear();
+									document.write(days[currDay] + ", " + months[currMonth] + " " + currDate + ", " + currYear);
+							#location
+								//widget from AccuWeather
+								a(href="http://www.accuweather.com/en/us/berkeley-ca/94704/weather-forecast/332044").aw-widget-legal
+								div(data-locationkey="", data-unit="f", data-language="en-us", data-useip="true", data-uid="awcc1428610688930")#awcc1428610688930.aw-widget-current 
+								script(type="text/javascript", src="http://oap.accuweather.com/launch.js")
+						.col-md-12.col-xs-7#latest-news
+							#title Latest News
+							#articles
+								a(href=""): .article Vestibulum quis tellus pretium arcu lobortis placerat nec at ligula.
+								a(href=""): .article Quisque id pellentesque odio. Nulla sit amet libero non nisl rutrum rhoncus eu a mauris.
+								a(href=""): .article Quisque dictum fringilla mi vel sagittis. Nam sed ligula ac quam porttitor dictum id quis quam.
+								a(href=""): .article Nullam urna metus, rhoncus non elit at, luctus pulvinar elit.
+								a(href=""): .article Mauris vel condimentum libero, non hendrerit nulla accumsan mollis.
+								a(href=""): .article Curabitur sed sapien vulputate, ullamcorper dui sit amet, egestas.
+
+		.container.main-content.panel.panel-default
+			#front-page-articles.panel.panel-body
+				.row
+					.col-sm-4.col-xs-12.section
+						a(href="").tag 2016 Election
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/2016-thumbnail.jpg")
+							a(href="").title.col-xs-6 Fusce pharetra semper metus, ac pulvinar ante finibus eu.
+								.caption Aenean consequat vestibulum maximus. Vivamus consequat in elit eu tincidunt. Cras eu sem et erat faucibus lobortis.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag Science
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/science-thumbnail.jpg")
+							a(href="").title.col-xs-6 Donec aliquam lectus interdum elit feugiat.
+								.caption Augue quam, efficitur nec nulla at, porta finibus mauris. Fusce finibus tincidunt risus, nec placerat ipsum.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag LGBT
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/lgbt-thumbnail.jpg")
+							a(href="").title.col-xs-6 Vestibulum sit amet finibus lorem.
+								.caption Nullam augue purus, tincidunt ut pellentesque sed, ullamcorper vitae nisl. In iaculis, tortor ut fermentum.
+
+				.row
+					.col-sm-4.col-xs-12.section
+						a(href="").tag Police
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/police-thumbnail.jpg")
+							a(href="").title.col-xs-6 Curabitur tortor odio, congue vel lobortis tempus.
+								.caption Donec iaculis dolor sapien, vitae condimentum sapien faucibus id. Nunc vestibulum justo id dolor laoreet.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag ISIS
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/isis-thumbnail.jpg")
+							a(href="").title.col-xs-6 Ut rhoncus velit vitae enim lobortis, eu posuere felis bibendum.
+								.caption Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag Russia
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/russia-thumbnail.jpg")
+							a(href="").title.col-xs-6 Maecenas tincidunt placerat mi a mollis.
+								.caption Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi scelerisque interdum enim.
+
+				.row
+					.col-sm-4.col-xs-12.section
+						a(href="").tag Stock Market
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/stock-thumbnail.jpg")
+							a(href="").title.col-xs-6 Vestibulum vehicula est non eros iaculis.
+								.caption Duis tincidunt metus velit, non semper tellus dictum et. Fusce et semper tellus.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag Apple
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/apple-thumbnail.jpg")
+							a(href="").title.col-xs-6 Nullam convallis lectus ut nisl consequat.
+								.caption Phasellus eleifend, erat id commodo dictum, sem ligula consectetur leo, eu dictum nulla nunc non mauris.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag Environment
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/environment-thumbnail.jpg")
+							a(href="").title.col-xs-6 Duis vulputate pulvinar ligula, eget aliquet diam pulvinar at.
+								.caption In iaculis, tortor ut fermentum eleifend, velit risus dictum quam, sed posuere lorem nunc in nulla.
+
+				.row
+					.col-sm-4.col-xs-12.section
+						a(href="").tag College
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/college-thumbnail.jpg")
+							a(href="").title.col-xs-6 Aliquam id ex ut nunc gravida maximus et eget felis.
+								.caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis scelerisque enim, convallis.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag NCAA 2015
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/ncaa-thumbnail.jpg")
+							a(href="").title.col-xs-6 Phasellus gravida, erat eget ultricies scelerisque.
+								.caption Quisque congue erat ante, et ornare lacus interdum convallis. Proin pretium ultricies mi eu semper.
+
+					.col-sm-4.col-xs-12.section
+						a(href="").tag US Masters
+						.article.row
+							a(href="").thumbnail.col-xs-6
+								img(src="assets/img/front-page-tags/masters-thumbnail.jpg")
+							a(href="").title.col-xs-6 Mauris est augue, dapibus nec risus nec, placerat fringilla elit.
+								.caption Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.
+
+			a(href="")#more-news.text-right.col-xs-12 More News
+
+		.container.footer
