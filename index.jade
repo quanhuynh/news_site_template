@@ -13,8 +13,7 @@ html
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
 
 	body
-
-
+		
 		.topbar.row
 			a(href="").col-sm-2.col-xs-12.sitename 
 					p LOREM 
@@ -203,6 +202,49 @@ html
 							a(href="").title.col-xs-6 Mauris est augue, dapibus nec risus nec, placerat fringilla elit.
 								.caption Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.
 
-			a(href="")#more-news.text-right.col-xs-12 More News
+			#more-news.text-right.col-xs-12 
+				a(href="") More News
 
 		.container.footer
+			.row.main
+				.col-sm-4.col-xs-6
+					ul#sections 
+						#title Sections
+						.list
+							a(href=""): li.section Politics
+							a(href=""): li.section Business
+							a(href=""): li.section Technology
+							a(href=""): li.section Entertainment
+							a(href=""): li.section Finance
+							a(href=""): li.section Opinions
+							a(href=""): li.section Local
+				.col-sm-4.col-xs-6
+					ul#sections
+						#title Lorem Ipsum
+						.list
+							a(href=""): li.section About Us
+							a(href=""): li.section Careers
+							a(href=""): li.section Privacy Policy
+							a(href=""): li.section FAQ
+							a(href=""): li.section Archives
+							a(href=""): li.section Contact Us
+				.col-sm-4.col-xs-12.mailing
+					.heading Sign up for our daily news e-mail
+					.subheading Join to receive exclusive news every day for free 
+					.email-form
+						input(type="text", placeholder="Enter e-mail")
+					a(href="").subscribe-btn Sign up
+			.row.social-media
+				.col-xs-12.links
+					a(href="http://facebook.com")
+						img(src="assets/img/icons/facebook.png")
+					a(href="http://twitter.com")
+						img(src="assets/img/icons/twitter2.png")
+					a(href="http://instagram.com")
+						img(src="assets/img/icons/instagram.png")
+					a(href="http://pinterest.com")
+						img(src="assets/img/icons/pinterest.png")
+					a(href="http://youtube.com")
+						img(src="assets/img/icons/youtube.png")
+				.col-xs-12.copyright
+					p Copyright 2015 Lorem Ipsum Post | Designed by <a href="http://quanhuynh.github.io"> Quan Huynh </a>
