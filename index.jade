@@ -14,33 +14,8 @@ html
 
 	body
 		
-		.topbar.row
-			a(href="").col-sm-2.col-xs-12.sitename 
-					p LOREM 
-					p IPSUM 
-					p POST
-			.col-sm-10.col-xs-12.topbarright.container-fluid
-				.col-sm-8.text-left
-					.row#sections
-							.section Politics
-							.section Business
-							.section Tech
-							.section Entertainment
-							.section Finance
-					.row#edition
-							.edition Edition
-							a(href="").choice U.S. |
-							a(href="").choice Europe |
-							a(href="").choice Asia
-				.col-sm-4.text-right
-					#accountsection
-						#create Create an Account
-						#signin Sign in
-					#searchbar
-						input(type="text", placeholder="Search")
-						a(href="")
-							img(src="assets/img/search.png")
-
+		include includes/top-bar.jade
+					img(src="assets/img/search.png")
 		.container.landing-view
 			.row
 				.col-md-8.col-sm-12#featured-article
@@ -48,21 +23,21 @@ html
 						.carousel-inner
 							
 							.active.item
-								a(href="")
+								a(href="article-page.html")
 									img(src="assets/img/featured1.jpg")
 									#text
 										#title Maecenas laoreet justo lorem viverra.
 										#caption Aenean odio lectus, bibendum eget dui eget, pharetra feugiat est.
 							
 							.item
-								a(href="")
+								a(href="article-page.html")
 									img(src="assets/img/featured2.jpg")
 									#text
 										#title Aliquam posuere vulputate sapien vel.
 										#caption Mauris ullamcorper tellus quis tortor fermentum, non interdum enim commodo.
 							
 							.item
-								a(href="")
+								a(href="article-page.html")
 									img(src="assets/img/featured3.jpg")
 									#text
 										#title Nulla vitae lacinia arcu, in elementum ligula.
@@ -93,12 +68,12 @@ html
 						.col-md-12.col-xs-7#latest-news
 							#title Latest News
 							#articles
-								a(href=""): .article Vestibulum quis tellus pretium arcu lobortis placerat nec at ligula.
-								a(href=""): .article Quisque id pellentesque odio. Nulla sit amet libero non nisl rutrum rhoncus eu a mauris.
-								a(href=""): .article Quisque dictum fringilla mi vel sagittis. Nam sed ligula ac quam porttitor dictum id quis quam.
-								a(href=""): .article Nullam urna metus, rhoncus non elit at, luctus pulvinar elit.
-								a(href=""): .article Mauris vel condimentum libero, non hendrerit nulla accumsan mollis.
-								a(href=""): .article Curabitur sed sapien vulputate, ullamcorper dui sit amet, egestas.
+								a(href="article-page.html"): .article Vestibulum quis tellus pretium arcu lobortis placerat nec at ligula.
+								a(href="article-page.html"): .article Quisque id pellentesque odio. Nulla sit amet libero non nisl rutrum rhoncus eu a mauris.
+								a(href="article-page.html"): .article Quisque dictum fringilla mi vel sagittis. Nam sed ligula ac quam porttitor dictum id quis quam.
+								a(href="article-page.html"): .article Nullam urna metus, rhoncus non elit at, luctus pulvinar elit.
+								a(href="article-page.html"): .article Mauris vel condimentum libero, non hendrerit nulla accumsan mollis.
+								a(href="article-page.html"): .article Curabitur sed sapien vulputate, ullamcorper dui sit amet, egestas.
 
 		.container.main-content.panel.panel-default
 			#front-page-articles.panel.panel-body
@@ -106,145 +81,103 @@ html
 					.col-sm-4.col-xs-12.section
 						a(href="").tag 2016 Election
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/2016-thumbnail.jpg")
-							a(href="").title.col-xs-6 Fusce pharetra semper metus, ac pulvinar ante finibus eu.
+							a(href="article-page.html").title.col-xs-6 Fusce pharetra semper metus, ac pulvinar ante finibus eu.
 								.caption Aenean consequat vestibulum maximus. Vivamus consequat in elit eu tincidunt. Cras eu sem et erat faucibus lobortis.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag Science
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/science-thumbnail.jpg")
-							a(href="").title.col-xs-6 Donec aliquam lectus interdum elit feugiat.
+							a(href="article-page.html").title.col-xs-6 Donec aliquam lectus interdum elit feugiat.
 								.caption Augue quam, efficitur nec nulla at, porta finibus mauris. Fusce finibus tincidunt risus, nec placerat ipsum.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag LGBT
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/lgbt-thumbnail.jpg")
-							a(href="").title.col-xs-6 Vestibulum sit amet finibus lorem.
+							a(href="article-page.html").title.col-xs-6 Vestibulum sit amet finibus lorem.
 								.caption Nullam augue purus, tincidunt ut pellentesque sed, ullamcorper vitae nisl. In iaculis, tortor ut fermentum.
 
 				.row
 					.col-sm-4.col-xs-12.section
 						a(href="").tag Police
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/police-thumbnail.jpg")
-							a(href="").title.col-xs-6 Curabitur tortor odio, congue vel lobortis tempus.
+							a(href="article-page.html").title.col-xs-6 Curabitur tortor odio, congue vel lobortis tempus.
 								.caption Donec iaculis dolor sapien, vitae condimentum sapien faucibus id. Nunc vestibulum justo id dolor laoreet.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag ISIS
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/isis-thumbnail.jpg")
-							a(href="").title.col-xs-6 Ut rhoncus velit vitae enim lobortis, eu posuere felis bibendum.
+							a(href="article-page.html").title.col-xs-6 Ut rhoncus velit vitae enim lobortis, eu posuere felis bibendum.
 								.caption Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag Russia
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/russia-thumbnail.jpg")
-							a(href="").title.col-xs-6 Maecenas tincidunt placerat mi a mollis.
+							a(href="article-page.html").title.col-xs-6 Maecenas tincidunt placerat mi a mollis.
 								.caption Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi scelerisque interdum enim.
 
 				.row
 					.col-sm-4.col-xs-12.section
 						a(href="").tag Stock Market
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/stock-thumbnail.jpg")
-							a(href="").title.col-xs-6 Vestibulum vehicula est non eros iaculis.
+							a(href="article-page.html").title.col-xs-6 Vestibulum vehicula est non eros iaculis.
 								.caption Duis tincidunt metus velit, non semper tellus dictum et. Fusce et semper tellus.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag Apple
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/apple-thumbnail.jpg")
-							a(href="").title.col-xs-6 Nullam convallis lectus ut nisl consequat.
+							a(href="article-page.html").title.col-xs-6 Nullam convallis lectus ut nisl consequat.
 								.caption Phasellus eleifend, erat id commodo dictum, sem ligula consectetur leo, eu dictum nulla nunc non mauris.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag Environment
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/environment-thumbnail.jpg")
-							a(href="").title.col-xs-6 Duis vulputate pulvinar ligula, eget aliquet diam pulvinar at.
+							a(href="article-page.html").title.col-xs-6 Duis vulputate pulvinar ligula, eget aliquet diam pulvinar at.
 								.caption In iaculis, tortor ut fermentum eleifend, velit risus dictum quam, sed posuere lorem nunc in nulla.
 
 				.row
 					.col-sm-4.col-xs-12.section
 						a(href="").tag College
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/college-thumbnail.jpg")
-							a(href="").title.col-xs-6 Aliquam id ex ut nunc gravida maximus et eget felis.
+							a(href="article-page.html").title.col-xs-6 Aliquam id ex ut nunc gravida maximus et eget felis.
 								.caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis scelerisque enim, convallis.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag NCAA 2015
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/ncaa-thumbnail.jpg")
-							a(href="").title.col-xs-6 Phasellus gravida, erat eget ultricies scelerisque.
+							a(href="article-page.html").title.col-xs-6 Phasellus gravida, erat eget ultricies scelerisque.
 								.caption Quisque congue erat ante, et ornare lacus interdum convallis. Proin pretium ultricies mi eu semper.
 
 					.col-sm-4.col-xs-12.section
 						a(href="").tag US Masters
 						.article.row
-							a(href="").thumbnail.col-xs-6
+							.thumbnail.col-xs-6
 								img(src="assets/img/front-page-tags/masters-thumbnail.jpg")
-							a(href="").title.col-xs-6 Mauris est augue, dapibus nec risus nec, placerat fringilla elit.
+							a(href="article-page.html").title.col-xs-6 Mauris est augue, dapibus nec risus nec, placerat fringilla elit.
 								.caption Vestibulum eget dolor at tellus pharetra aliquam. Phasellus lacus lorem, varius at condimentum sed.
 
 			#more-news.text-right.col-xs-12 
 				a(href="") More News
 
-		.container.footer
-			.row.main
-				.col-sm-4.col-xs-6
-					ul#sections 
-						#title Sections
-						.list
-							a(href=""): li.section Politics
-							a(href=""): li.section Business
-							a(href=""): li.section Technology
-							a(href=""): li.section Entertainment
-							a(href=""): li.section Finance
-							a(href=""): li.section Opinions
-							a(href=""): li.section Local
-				.col-sm-4.col-xs-6
-					ul#sections
-						#title Lorem Ipsum
-						.list
-							a(href=""): li.section About Us
-							a(href=""): li.section Careers
-							a(href=""): li.section Privacy Policy
-							a(href=""): li.section FAQ
-							a(href=""): li.section Archives
-							a(href=""): li.section Contact Us
-				.col-sm-4.col-xs-12.mailing
-					.heading Sign up for our daily news e-mail
-					.subheading Join to receive exclusive news every day for free 
-					.email-form
-						input(type="text", placeholder="Enter e-mail")
-					a(href="").subscribe-btn Sign up
-			.row.social-media
-				.col-xs-12.links
-					a(href="http://facebook.com")
-						img(src="assets/img/icons/facebook.png")
-					a(href="http://twitter.com")
-						img(src="assets/img/icons/twitter2.png")
-					a(href="http://instagram.com")
-						img(src="assets/img/icons/instagram.png")
-					a(href="http://pinterest.com")
-						img(src="assets/img/icons/pinterest.png")
-					a(href="http://youtube.com")
-						img(src="assets/img/icons/youtube.png")
-				.col-xs-12.copyright
-					p Copyright 2015 Lorem Ipsum Post | Designed by <a href="http://quanhuynh.github.io"> Quan Huynh </a>
+		include includes/footer.jade
