@@ -142,9 +142,11 @@
 		font:
 			weight: 600
 			family: $base-font
+
 	.article-content
-		padding: 2%
+		padding: 3%
 		.sub-title
+			padding-right: 3%
 			text-align: right
 			font-style: italic
 		p
@@ -162,5 +164,44 @@
 			margin: 0 auto
 			background-color: #E6E6E6
 			font-style: italic
+		.similar
+			padding-top: 5%
+			.sim-heading
+				padding-bottom: 2%
+				font:
+					family: $base-font
+					size: 2em
+			.sim-art
+				cursor: pointer
+				transition: all 0.3s ease-in-out
+				&:hover
+					transform: scale(1.02)
+				.sim-title
+					padding: 2%
+					font:
+						family: $secondary-font
+						size: 1.2em
+
+
+	.left-bar
+		font-family: $base-font
+		padding: 3% 0 3% 0
+		.left-heading
+			border-bottom: thin dotted #ccc
+			font-weight: 600
+		.side-art
+			padding: 2% 0 2% 0
+			.side-title
+				font:
+					weight: 600
+					size: 1.5em
+		.more
+			cursor: pointer
+			font-weight: 600
+			opacity: 0.8
+			transition: all 0.2s ease-in-out
+			&:hover
+				opacity: 1
+
 
 @import 'footer'
